@@ -23,20 +23,20 @@ public class SwagLabLogin {
     }
 
     public  static void credentials (){
-        WebElement usernameField = getElementWithPolling(webDriverWait, By.ByXPath.xpath(USERNAME_FIELD));
+        WebElement usernameField = getElementWithPolling(webDriverWait, By.xpath(USERNAME_FIELD));
         usernameField.click();
         usernameField.sendKeys("standard_user");
 
-        WebElement passwordField = getElementWithPolling(webDriverWait, By.ByXPath.xpath(PASSWORD_FIELD));
+        WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
         passwordField.click();
         passwordField.sendKeys("secret_sauce");
 
-        WebElement loginBtn = getElementWithPolling(webDriverWait, By.ByXPath.xpath(LOGIN_BTN));
+        WebElement loginBtn = getElementWithPolling(webDriverWait, By.xpath(LOGIN_BTN));
         loginBtn.click();
     }
 
     public static void productsPage(){
-        WebElement passwordField = getElementWithPolling(webDriverWait, By.ByXPath.xpath(PASSWORD_FIELD));
+        WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
         passwordField.click();
     }
 
