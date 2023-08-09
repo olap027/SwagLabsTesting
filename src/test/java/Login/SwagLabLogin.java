@@ -25,7 +25,7 @@ public class SwagLabLogin {
     public  static void credentials (){
         WebElement usernameField = getElementWithPolling(webDriverWait, By.xpath(USERNAME_FIELD));
         usernameField.click();
-        usernameField.sendKeys("standard_user");
+        usernameField.sendKeys("standard_userss");
 
         WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
         passwordField.click();
