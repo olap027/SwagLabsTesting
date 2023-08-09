@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Init Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" afterDir="false" />
+    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Init Commit 2">
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/ElementType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AppUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691574170115</updated>
-      <workItem from="1691574171539" duration="426000" />
+      <workItem from="1691574171539" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -118,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691574336938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Init Commit 2">
+      <option name="closed" value="true" />
+      <created>1691574743401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691574743401</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+    <MESSAGE value="Init Commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Commit 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
