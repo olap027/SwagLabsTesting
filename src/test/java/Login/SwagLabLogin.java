@@ -15,17 +15,16 @@ public class SwagLabLogin {
     private static WebDriver chromeConfig = null;
     private static WebDriverWait webDriverWait = null;
 
-
     public static void gotoSwag() {
         chromeConfig = getChromeConfig();
         webDriverWait = getDriverWait(chromeConfig);
-
     }
 
-    public  static void credentials (){
+    public  static void credentials(){
+
         WebElement usernameField = getElementWithPolling(webDriverWait, By.xpath(USERNAME_FIELD));
         usernameField.click();
-        usernameField.sendKeys("standard_userss");
+        usernameField.sendKeys("standard_user");
 
         WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
         passwordField.click();
@@ -33,8 +32,8 @@ public class SwagLabLogin {
 
         WebElement loginBtn = getElementWithPolling(webDriverWait, By.xpath(LOGIN_BTN));
         loginBtn.click();
-    }
 
+    }
     public static void productsPage(){
         WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
         passwordField.click();

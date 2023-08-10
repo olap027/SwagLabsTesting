@@ -11,18 +11,18 @@ import java.time.Duration;
 public class DriverConfig {
     private final static String swagLabs = "https://www.saucedemo.com/";
     private final static Integer WAITING_TIME = 40;
+    private static WebDriver driverChrome;
 
     public static WebDriver getChromeConfig() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--start-maximized");
-        WebDriver driverChrome = new ChromeDriver(options);
+        driverChrome = new ChromeDriver(options);
         driverChrome.get(swagLabs);
         return driverChrome;
 
     }
-
     public static WebDriverWait getDriverWait(WebDriver driver){
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(WAITING_TIME));
         return webDriverWait;

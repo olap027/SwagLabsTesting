@@ -23,6 +23,7 @@ public class LoginSteps {
 
     @When("Enter credentials")
     public void Enter_credentials() {
+
         SwagLabLogin.credentials();
     }
 
