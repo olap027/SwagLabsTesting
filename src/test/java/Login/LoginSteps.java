@@ -1,9 +1,11 @@
 package Login;
 
+import com.google.gson.stream.JsonToken;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -22,15 +24,17 @@ public class LoginSteps {
         swagLabLogin = new SwagLabLogin(driver);
     }
 
-    @When("Enter credentials")
-    public void Enter_credentials() {
+    @When("A registered user who entered a valid username and password")
+    public void inputValidUsernameAndPassword() {
         swagLabLogin.credentials();
     }
 
-//    @Then("User will navigate to products page")
-//    public void User_will_navigate_to_products_page() {
-//
-//    }
+    @Then("The user will navigate to the products page {string}")
+    public void verifyProductsPageURL(String expectedURL){
+        String currentURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentURL,expectedURL);
+    }
+
 
 
 }

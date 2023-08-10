@@ -5,22 +5,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static configuration.DriverConfig.getChromeConfig;
+import static configuration.DriverConfig.getDriverWait;
 import static constant.Login.*;
-
+import static utils.AppUtil.getElementWithPolling;
 
 
 public class SwagLabLogin {
 
     private static WebDriver driver;
-    private static WebDriverWait webDriverWait = null;
-    private static WebDriver chromeConfig = null;
+    public static WebDriverWait webDriverWait = null;
+    public static WebDriver chromeConfig = null;
     public SwagLabLogin (WebDriver driver){
         this.driver = driver;
     }
 
     public void credentials() {
-//        chromeConfig = getChromeConfig();
-//        webDriverWait = getDriverWait(chromeConfig);
+
         WebElement usernameField = driver.findElement(By.xpath(USERNAME_FIELD));
         usernameField.click();
         usernameField.sendKeys("standard_user");
@@ -32,13 +33,6 @@ public class SwagLabLogin {
         WebElement loginBtn =  driver.findElement(By.xpath(LOGIN_BTN));
         loginBtn.click();
 
-
     }
-
-
-//    public static void productsPage(){
-//        WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
-//        passwordField.click();
-//    }
 
 }
