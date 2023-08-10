@@ -11,7 +11,6 @@ import static constant.Login.*;
 import static utils.AppUtil.getElementWithPolling;
 
 public class SwagLabLogin {
-
     private static WebDriver chromeConfig = null;
     private static WebDriverWait webDriverWait = null;
 
@@ -19,7 +18,6 @@ public class SwagLabLogin {
     public static void gotoSwag() {
         chromeConfig = getChromeConfig();
         webDriverWait = getDriverWait(chromeConfig);
-
     }
 
     public  static void credentials (){
@@ -33,11 +31,10 @@ public class SwagLabLogin {
 
         WebElement loginBtn = getElementWithPolling(webDriverWait, By.xpath(LOGIN_BTN));
         loginBtn.click();
+
     }
 
     public static void productsPage(){
-        WebElement passwordField = getElementWithPolling(webDriverWait, By.xpath(PASSWORD_FIELD));
-        passwordField.click();
     }
 
 }
