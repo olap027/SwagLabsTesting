@@ -26,8 +26,9 @@ public class LoginSteps {
         SwagLabLogin.credentials();
     }
 
-//    @Then("User will navigate to products page")
+   @Then("User will navigate to products page")
     public void User_will_navigate_to_products_page() {
+        SwagLabLogin.productsPage();
 
     }
 
