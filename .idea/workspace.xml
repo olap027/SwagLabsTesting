@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Rebase code to angel branch">
+    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Recovering codes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constant/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constant/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunners.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,22 +65,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Login registered user">
-    <configuration name="testRunners" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testRunners" />
-      <module name="SwagLabsTesting" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: SwagLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User did not fill in password field, I won't be able to login">
+    <configuration name="Scenario: Login locked out user account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
       <option name="GLUE" value="Login" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: SwagLogin" />
+      <option name="NAME_FILTER" value="^Login locked out user account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login locked out user account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login locked out user account" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -92,15 +86,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login registered user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login registered user account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
       <option name="GLUE" value="Login" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login registered user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login registered user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login registered user" />
+      <option name="NAME_FILTER" value="^Login registered user account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login registered user account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login registered user account" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -112,15 +106,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login unregistered user account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
       <option name="GLUE" value="Login" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="NAME_FILTER" value="^Login unregistered user account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login unregistered user account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login unregistered user account" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -132,22 +126,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testRunners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User did not fill in password field, I won't be able to login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
+      <option name="GLUE" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testRunners" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="NAME_FILTER" value="^User did not fill in password field\, I won\'t be able to login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User did not fill in password field\, I won\'t be able to login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User did not fill in password field, I won't be able to login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User did not fill in username field, I won't be able to login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
+      <option name="GLUE" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SwagLabsTesting" />
+      <option name="NAME_FILTER" value="^User did not fill in username field\, I won\'t be able to login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User did not fill in username field\, I won\'t be able to login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User did not fill in username field, I won't be able to login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Login registered user" />
-        <item itemvalue="JUnit.testRunners" />
-        <item itemvalue="Cucumber Java.Feature: SwagLogin" />
-        <item itemvalue="Application.testRunners" />
-        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Scenario: User did not fill in password field, I won't be able to login" />
+        <item itemvalue="Cucumber Java.Scenario: User did not fill in username field, I won't be able to login" />
+        <item itemvalue="Cucumber Java.Scenario: Login locked out user account" />
+        <item itemvalue="Cucumber Java.Scenario: Login unregistered user account" />
+        <item itemvalue="Cucumber Java.Scenario: Login registered user account" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +188,8 @@
       <workItem from="1691575299655" duration="2302000" />
       <workItem from="1691646898936" duration="1917000" />
       <workItem from="1691649479475" duration="11441000" />
-      <workItem from="1691718196963" duration="3897000" />
+      <workItem from="1691718196963" duration="4609000" />
+      <workItem from="1691730160151" duration="7886000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -205,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691656463785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Recovering codes">
+      <option name="closed" value="true" />
+      <created>1691729681251</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691729681251</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +271,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/angel" />
+                        <option value="origin/olaf" />
                       </list>
                     </value>
                   </entry>
@@ -252,7 +286,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Init changed driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init changed driver" />
+    <MESSAGE value="Recovering codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recovering codes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
