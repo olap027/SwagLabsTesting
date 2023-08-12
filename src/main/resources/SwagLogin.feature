@@ -29,3 +29,10 @@ Feature: Login
     When I input only username field
     * Click Login
     Then Show error message for required password field "Epic sadface: Password is required"
+
+  @SC_TC_006
+  Scenario: Login with unfilled required fields
+    * Click Login
+    Then Show error message for required field "Epic sadface: Username is required"
+
+

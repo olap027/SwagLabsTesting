@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import static configuration.DriverConfig.getChromeConfig;
-import static constant.Login.*;
+import static constant.Login.ERROR_MESSAGE;
 
 public class LoginSteps {
 
@@ -31,18 +31,18 @@ public class LoginSteps {
 
     @And("Click Login")
     public void clickLogin() {
-        swagLabLogin.clickLogin();
+        SwagLabLogin.clickLogin();
     }
 
     @When("Enter credentials")
     public void Enter_credentials() {
-        swagLabLogin.enterValidUser();
-        swagLabLogin.enterValidPass();
+        SwagLabLogin.enterValidUser();
+        SwagLabLogin.enterValidPass();
     }
 
     @Then("User will navigate to products page {string}")
     public void User_will_navigate_to_products_page(String expectedURL) {
-        swagLabLogin.productsPage();
+        SwagLabLogin.productsPage();
         String currentURL = driver.getCurrentUrl();
         Assert.assertEquals(currentURL, expectedURL);
         System.out.println("Expected Url: " + expectedURL);
@@ -50,20 +50,20 @@ public class LoginSteps {
 
     @When("I enter non credentials account")
     public void nonCredentialsAccount() {
-        swagLabLogin.enterInvalidUser();
-        swagLabLogin.enterValidPass();
+        SwagLabLogin.enterInvalidUser();
+        SwagLabLogin.enterValidPass();
     }
 
     @Then("Unable to login {string}")
     public void errorMessage(String expectedError) {
-        swagLabLogin.ErrorMessageNonUser();
+        SwagLabLogin.ErrorMessageNonUser();
         System.out.println("The Expected Error Message: " + expectedError);
     }
 
     @When("I enter locked credentials account")
     public void lockedAccount() {
-        swagLabLogin.enterLockedUser();
-        swagLabLogin.enterValidPass();
+        SwagLabLogin.enterLockedUser();
+        SwagLabLogin.enterValidPass();
     }
 
     @Then("The account enable to login {string}")
@@ -77,7 +77,7 @@ public class LoginSteps {
 
     @When("I input only password field")
     public void passwordInputOnly() {
-        swagLabLogin.enterValidPass();
+        SwagLabLogin.enterValidPass();
     }
 
     @Then("Show error message for required username field {string}")
@@ -91,11 +91,51 @@ public class LoginSteps {
 
     @When("I input only username field")
     public void usernameInputOnly() {
-        swagLabLogin.enterValidUser();
+        SwagLabLogin.enterValidUser();
     }
 
     @Then("Show error message for required password field {string}")
     public void errorPassField(String expectedError) {
+        WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
+        String actualLockedError = error_message.getText();
+        Assert.assertEquals(actualLockedError, expectedError);
+        System.out.println("Actual Error: " + actualLockedError);
+        System.out.println("Expected Error: " + expectedError);
+    }
+
+    @Then("Show error message for required field {string}")
+    public void errorField(String expectedError) {
+        WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
+        String actualLockedError = error_message.getText();
+        Assert.assertEquals(actualLockedError, expectedError);
+        System.out.println("Actual Error: " + actualLockedError);
+        System.out.println("Expected Error: " + expectedError);
+    }
+
+    //// New Class This scenario
+    @When("I access the Home page without login {string}")
+    public void inventorySite (String url){
+        driver.get("http://www.saucedemo.com/inventory.html");
+        System.out.println("The url navigating: " + url);
+    }
+
+    @Then("Show error message for accessing home site without login {string}")
+    public void accessingInventoryPage (String expectedError){
+        WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
+        String actualLockedError = error_message.getText();
+        Assert.assertEquals(actualLockedError, expectedError);
+        System.out.println("Actual Error: " + actualLockedError);
+        System.out.println("Expected Error: " + expectedError);
+    }
+
+    @When("I will access the check out page step 2 {string}")
+    public void addToCartSite (String url){
+        driver.get("http://www.saucedemo.com/checkout-step-two.html");
+        System.out.println("The url navigating: " + url);
+    }
+
+    @Then("Show error message for accessing add to cart page without login {string}")
+    public void accessingAddToCartPage (String expectedError) {
         WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
         String actualLockedError = error_message.getText();
         Assert.assertEquals(actualLockedError, expectedError);

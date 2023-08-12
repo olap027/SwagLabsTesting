@@ -17,20 +17,8 @@ public class SwagLabLogin {
     public static WebDriverWait webDriverWait;
 
     public SwagLabLogin(WebDriver driver) {
-        this.driver = driver;
+        SwagLabLogin.driver = driver;
     }
-
-//    public  static void credentials (){
-//        WebElement usernameField = driver.findElement(By.xpath(USERNAME_FIELD));
-//        usernameField.sendKeys("standard_user");
-//
-//        WebElement passwordField = driver.findElement(By.xpath(PASSWORD_FIELD));
-//        passwordField.sendKeys("secret_sauce");
-//
-//        WebElement loginBtn = driver.findElement(By.xpath(LOGIN_BTN));
-//        loginBtn.click();
-//
-//    }
 
     public static void enterValidUser() {
         WebElement usernameField = driver.findElement(By.xpath(USERNAME_FIELD));
@@ -74,5 +62,6 @@ public class SwagLabLogin {
         WebElement error_message = getElementWithPolling(webDriverWait, By.xpath(ERROR_MESSAGE));
         String actualError = error_message.getText();
     }
+
 
 }
