@@ -112,35 +112,4 @@ public class LoginSteps {
         System.out.println("Expected Error: " + expectedError);
     }
 
-    //// New Class This scenario
-    @When("I access the Home page without login {string}")
-    public void inventorySite (String url){
-        driver.get("http://www.saucedemo.com/inventory.html");
-        System.out.println("The url navigating: " + url);
-    }
-
-    @Then("Show error message for accessing home site without login {string}")
-    public void accessingInventoryPage (String expectedError){
-        WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
-        String actualLockedError = error_message.getText();
-        Assert.assertEquals(actualLockedError, expectedError);
-        System.out.println("Actual Error: " + actualLockedError);
-        System.out.println("Expected Error: " + expectedError);
-    }
-
-    @When("I will access the check out page step 2 {string}")
-    public void addToCartSite (String url){
-        driver.get("http://www.saucedemo.com/checkout-step-two.html");
-        System.out.println("The url navigating: " + url);
-    }
-
-    @Then("Show error message for accessing add to cart page without login {string}")
-    public void accessingAddToCartPage (String expectedError) {
-        WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
-        String actualLockedError = error_message.getText();
-        Assert.assertEquals(actualLockedError, expectedError);
-        System.out.println("Actual Error: " + actualLockedError);
-        System.out.println("Expected Error: " + expectedError);
-    }
-
 }

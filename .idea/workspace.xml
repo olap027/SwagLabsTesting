@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Initial Config Automation">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/NotLogin.feature" afterDir="false" />
+    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="- Completing Scenario in login&#10;- Adding feature test for accessing different url">
+      <change afterPath="$PROJECT_DIR$/src/test/java/NotLogin/NotLoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/NotLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/NotLogin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,16 +74,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: The user accessing the Add to cart page without logging it">
-    <configuration name="Scenario: Login registered user account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: NotLogin">
+    <configuration name="Feature: NotLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/NotLogin.feature" />
+      <option name="GLUE" value="NotLogin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login registered user account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login registered user account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login registered user account" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: NotLogin" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -96,15 +94,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login with unfilled required fields" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: The user accessing the Add to cart page without logging it (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/NotLogin.feature" />
+      <option name="GLUE" value="NotLogin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login with unfilled required fields$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with unfilled required fields$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login with unfilled required fields" />
+      <option name="NAME_FILTER" value="^The user accessing the Add to cart page without logging it$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user accessing the Add to cart page without logging it$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user accessing the Add to cart page without logging it" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -136,15 +134,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: The user accessing the Home page without logging it" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: The user accessing the Complete page without logging it" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/NotLogin.feature" />
+      <option name="GLUE" value="NotLogin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^The user accessing the Home page without logging it$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user accessing the Home page without logging it$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: The user accessing the Home page without logging it" />
+      <option name="NAME_FILTER" value="^The user accessing the Complete page without logging it$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user accessing the Complete page without logging it$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user accessing the Complete page without logging it" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -156,15 +154,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: The user is not logged in" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: The user accessing the check out page step 1 without logging it" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/NotLogin.feature" />
+      <option name="GLUE" value="NotLogin" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^The user is not logged in$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user is not logged in$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: The user is not logged in" />
+      <option name="NAME_FILTER" value="^The user accessing the check out page step 1 without logging it$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user accessing the check out page step 1 without logging it$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user accessing the check out page step 1 without logging it" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -178,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: NotLogin" />
+        <item itemvalue="Cucumber Java.Scenario: The user accessing the Complete page without logging it" />
+        <item itemvalue="Cucumber Java.Scenario: The user accessing the check out page step 1 without logging it" />
+        <item itemvalue="Cucumber Java.Scenario: The user accessing the Add to cart page without logging it (1)" />
         <item itemvalue="Cucumber Java.Scenario: The user accessing the Add to cart page without logging it" />
-        <item itemvalue="Cucumber Java.Scenario: The user accessing the Home page without logging it" />
-        <item itemvalue="Cucumber Java.Scenario: The user is not logged in" />
-        <item itemvalue="Cucumber Java.Scenario: Login with unfilled required fields" />
-        <item itemvalue="Cucumber Java.Scenario: Login registered user account" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +196,9 @@
       <workItem from="1691631392645" duration="8027000" />
       <workItem from="1691648223308" duration="599000" />
       <workItem from="1691648838073" duration="1379000" />
-      <workItem from="1691849592348" duration="4864000" />
+      <workItem from="1691849592348" duration="5309000" />
+      <workItem from="1691929473018" duration="376000" />
+      <workItem from="1691930725272" duration="2006000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691576407955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Completing Scenario in login&#10;- Adding feature test for accessing different url">
+      <created>1691854992305</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691854992305</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +303,8 @@
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Init Commit 2" />
     <MESSAGE value="Initial Config Automation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Config Automation" />
+    <MESSAGE value="- Completing Scenario in login&#10;- Adding feature test for accessing different url" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Completing Scenario in login&#10;- Adding feature test for accessing different url" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
