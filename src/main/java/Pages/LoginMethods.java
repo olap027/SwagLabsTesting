@@ -1,4 +1,4 @@
-package Login;
+package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,14 +10,14 @@ import static constant.Login.*;
 import static utils.AppUtil.getElementWithPolling;
 
 
-public class SwagLabLogin {
+public class LoginMethods {
 
     public static WebDriver driver;
     public static WebDriver chromeConfig;
     public static WebDriverWait webDriverWait;
 
-    public SwagLabLogin(WebDriver driver) {
-        SwagLabLogin.driver = driver;
+    public LoginMethods(WebDriver driver) {
+       LoginMethods.driver = driver;
     }
 
     public static void enterValidUser() {

@@ -8,5 +8,5 @@ public interface Login {
 
     String ERROR_MESSAGE = "//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/h3[1]";
 
-
+    String TABLE_CONTAINER = "//*[@id=\"inventory_container\"]";
 }
