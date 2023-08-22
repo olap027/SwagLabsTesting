@@ -1,6 +1,7 @@
 package Login;
 
 import Pages.LoginMethods;
+import Pages.ProductsPage;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.And;
@@ -23,6 +24,7 @@ public class LoginSteps {
     public static void setUp() {
         driver = getChromeConfig();
         swagLoginMethods = new LoginMethods(driver);
+        new ProductsPage(driver);
     }
 
     @AfterAll

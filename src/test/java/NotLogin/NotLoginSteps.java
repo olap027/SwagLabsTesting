@@ -1,34 +1,15 @@
 package NotLogin;
 
-import Pages.LoginMethods;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static configuration.DriverConfig.getChromeConfig;
+import static Pages.LoginMethods.driver;
 import static constant.Login.ERROR_MESSAGE;
 
 public class NotLoginSteps {
-
-    public static LoginMethods swagLoginMethods;
-    public static WebDriver driver;
-
-    @BeforeAll
-    public static void setUp() {
-        driver = getChromeConfig();
-        swagLoginMethods = new LoginMethods(driver);
-    }
-
-    @AfterAll
-    public static void exit() {
-        driver.close();
-    }
-
 
     @When("I will access the page without login {string}")
     public void inputTheSite(String url) {

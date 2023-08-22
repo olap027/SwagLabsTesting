@@ -11,9 +11,10 @@ public class TableCheck {
 
 
     @Then("Products table is displaying")
-    public void productsTable() {
+    public void productsTable() throws InterruptedException {
         boolean products = driver.findElement(By.xpath(TABLE_CONTAINER)).isDisplayed();
         Assert.assertTrue(products);
+        Thread.sleep(3000);
         System.out.println("Welcome Page");
     }
 
