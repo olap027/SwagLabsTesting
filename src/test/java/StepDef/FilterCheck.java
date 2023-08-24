@@ -1,4 +1,4 @@
-package Home;
+package StepDef;
 
 import Pages.LoginMethods;
 import Pages.ProductsPage;

@@ -38,6 +38,7 @@ public class ProductsPage {
         WebElement lowHigh = driver.findElement(By.xpath(LOW_TO_HIGH));
         lowHigh.click();
     }
+
     public static void fromHighToLow() {
         WebElement HighLow = driver.findElement(By.xpath(HIGH_TO_LOW));
         HighLow.click();
@@ -50,7 +51,7 @@ public class ProductsPage {
         Collections.sort(sortedNames);
         original.stream().forEach(s -> System.out.println(s));
         sortedNames.stream().forEach(s -> System.out.println(s));
-//        Assert.assertEquals(original, sortedNames);
+//       Assert.assertEquals(original, sortedNames);
 //        System.out.println(original);
 //        System.out.println(sortedNames);
     }
@@ -80,25 +81,42 @@ public class ProductsPage {
             }
         });
 
-        formattedPrice.forEach(s-> System.out.println(s));
+        formattedPrice.forEach(s -> System.out.println(s));
     }
 
     public static void highToLow() {
         List<WebElement> listElement = driver.findElements(By.xpath(INVENTORY_ITEM_PRICE));
-        List<String> originalList = listElement.stream().map(s -> s.getText()).collect(Collectors.toList());
-        ArrayList<String> formattedPrice = new ArrayList<>();
+        List<String> originalProductPrice = listElement.stream().map(s -> s.getText()).collect(Collectors.toList());
+        ArrayList<String> sortedPrice = new ArrayList<>();
 
-        for (int i = 0; i < originalList.size(); i++) {
-            String price = originalList.get(i);
+        for (int i = 0; i < originalProductPrice.size(); i++) {
+            String price = originalProductPrice.get(i);
             StringBuilder priceStr = new StringBuilder(price);
             String format = priceStr.deleteCharAt(0).toString();
-            formattedPrice.add(format);
+            sortedPrice.add(format);
         }
-        Collections.reverse(formattedPrice);
-        List <String> sortedList = formattedPrice.stream().collect(Collectors.toList());
-        sortedList.forEach(s -> System.out.println(s));
+        List<String> orginalPriceList = sortedPrice.stream().collect(Collectors.toList());
+        Collections.sort(sortedPrice, new Comparator<String>() {
+            public int compare(String o1, String o2) {
+                return extractInt(o2) - extractInt(o1);
+            }
 
+            int extractInt(String s) {
+                String num = s.replaceAll("\\D", "");
+                // return 0 if no digits found
+                return num.isEmpty() ? 0 : Integer.parseInt(num);
+            }
+        });
+
+        orginalPriceList.forEach(s -> System.out.println(s));
+        sortedPrice.forEach(s -> System.out.println(s));
+
+//        formattedPrice.forEach(s -> System.out.println(s));
+//        Assert.assertNotEquals(formattedPrice, sortedList);
     }
+
+
+
 
 
 

@@ -1,5 +1,6 @@
-package Login;
+package StepDef;
 
+import Pages.AddToCart;
 import Pages.LoginMethods;
 import Pages.ProductsPage;
 import io.cucumber.java.AfterAll;
@@ -25,6 +26,7 @@ public class LoginSteps {
         driver = getChromeConfig();
         swagLoginMethods = new LoginMethods(driver);
         new ProductsPage(driver);
+        new AddToCart(driver);
     }
 
     @AfterAll

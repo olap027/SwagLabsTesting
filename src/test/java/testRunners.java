@@ -2,7 +2,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"/Users/admin/IdeaProjects/SwagLabsTesting/src/main/resources"})
+@CucumberOptions(features= "src/main/resources/" , glue={"StepDef"})
 public class testRunners {
 
 }
