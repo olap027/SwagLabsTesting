@@ -19,6 +19,7 @@ public interface Home {
     String REMOVE_BTN = ".btn_secondary";
     String BUTTON = ".btn_inventory";
 
+    String CART_ITEM="//*[@id=\"item_0_title_link\"]";
 
 
 }

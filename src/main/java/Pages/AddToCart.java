@@ -33,7 +33,7 @@ public class AddToCart {
         buttons.get(buttonIndex).click();
     }
 
-    public static void equalName() {
+    public static List<String> equalName() {
         List<WebElement> productList = driver.findElements(By.cssSelector(BUTTON));
         List<String> newProd = productList.stream().map(s -> s.getText()).collect(Collectors.toList());
         List<String> addToCartItem = new ArrayList<>();
@@ -43,13 +43,13 @@ public class AddToCart {
             }
         }
         addToCartItem.forEach(s -> System.out.println(s));
+        return addToCartItem;
     }
 
     public static void clickRandomMultipleProducts() {
         List<WebElement> addToCartButton = driver.findElements(By.cssSelector(BUTTON));
         int random2 = ThreadLocalRandom.current().nextInt(0, addToCartButton.size());
         List<Integer> randomNumbers = new ArrayList<>();
-
         for (int i = 0; i <= random2; i++) {
             int random = ThreadLocalRandom.current().nextInt(0, addToCartButton.size());
             if (!randomNumbers.contains(random)) {
@@ -61,21 +61,40 @@ public class AddToCart {
         }
     }
 
-        public static void verifyButtonName () {
-            String remove_name = driver.findElement(By.cssSelector(REMOVE_BTN)).getText();
-            System.out.println(remove_name);
-        }
-
-        public static void clickAddToCartIcon () {
-            WebElement addToCart = driver.findElement(By.xpath(ADD_TO_CART_ICON));
-            addToCart.click();
-        }
-
-        public static void verifyNameInCartPage () {
-            List<WebElement> addToCartList = driver.findElements(By.cssSelector(INVENTORY_ITEM_NAME));
-            List<String> ListAddToCart = addToCartList.stream().map(s -> s.getText()).collect(Collectors.toList());
-            ListAddToCart.forEach(s -> System.out.println(s));
-        }
-
-
+    public static void verifyButtonName() {
+        String remove_name = driver.findElement(By.cssSelector(REMOVE_BTN)).getText();
+        System.out.println(remove_name);
     }
+
+    public static void clickAddToCartIcon() {
+        WebElement addToCart = driver.findElement(By.xpath(ADD_TO_CART_ICON));
+        addToCart.click();
+    }
+
+    public static void verifyNameInCartPage() {
+        List<WebElement> addToCartList = driver.findElements(By.cssSelector(INVENTORY_ITEM_NAME));
+        List<String> ListAddToCart = addToCartList.stream().map(s -> s.getText()).collect(Collectors.toList());
+        ListAddToCart.forEach(s -> System.out.println(s));
+    }
+
+    public static void removeItemList() {
+        List<WebElement> productList = driver.findElements(By.cssSelector(BUTTON));
+        List<String> newProd = productList.stream().map(s -> s.getText()).collect(Collectors.toList());
+        List<Integer> addToCartItem = new ArrayList<>();
+        List<String> removeItems = new ArrayList<>();
+
+        for (int i = 0; i < productList.size(); i++) {
+            if(newProd.get(i).contains("Remove")){
+                addToCartItem.add(i);
+            }
+        }
+
+        int random = ThreadLocalRandom.current().nextInt(0, addToCartItem.size());
+        for (int i = 0; i < random; i++) {
+            productList.get(addToCartItem.get(i)).click();
+            removeItems.add(driver.findElements(By.cssSelector(INVENTORY_ITEM_NAME)).get(addToCartItem.get(i)).getText());
+        }
+        removeItems.forEach(s -> System.out.println(s));
+    }
+    }
+
