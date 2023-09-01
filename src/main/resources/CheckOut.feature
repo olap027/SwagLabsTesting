@@ -61,6 +61,22 @@ Feature: Checkout: Your Information" page
     And click cancel
     Then User will be redirected to page "https://www.saucedemo.com/inventory.html"
 
+  @SC_TC_031
+  Scenario: As a user, I should be able to finish the transaction
+    Given Ready to checkout all orders in the cart
+    When I input valid information for checkout
+    And click continue
+    And click finish
+    Then User will be redirected to page "https://www.saucedemo.com/checkout-complete.html"
+
+  @SC_TC_032
+  Scenario: As a user who was done checking out, I should be able to go back to the products page and make another transaction
+    Given Ready to checkout all orders in the cart
+    When I input valid information for checkout
+    And click continue
+    And click finish
+    And click back to home
+    Then User will be redirected to page "https://www.saucedemo.com/inventory.html"
 
 
 

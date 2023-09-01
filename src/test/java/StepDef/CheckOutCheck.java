@@ -98,7 +98,15 @@ public class CheckOutCheck {
         CheckOutMethods.clickCancel();
     }
 
+    @And("click finish")
+    public void finishCheckout() {
+        CheckOutMethods.clickFinish();
+    }
 
+    @And("click back to home")
+    public void backToHomePage() {
+        CheckOutMethods.clickBackHome();
+    }
 
 
 }

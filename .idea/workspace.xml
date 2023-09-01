@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Init add to cart test case creation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckOutMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CheckOut.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDef/CheckOutCheck.java" afterDir="false" />
+    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Already done in Test Case 30 but not yet done in TC22 in add to cart page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AddToCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constant/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constant/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constant/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constant/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AddToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AddToCart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/AddToCartCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/AddToCartCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CheckOutMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckOutMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CheckOut.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CheckOut.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/CheckOutCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/CheckOutCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,7 @@
       <command value="mvn clean install -U" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: NotLogin">
+  <component name="RunManager" selected="Cucumber Java.Scenario: As a user who was done checking out, I should be able to go back to the products page and make another transaction">
     <configuration name="Feature: NotLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/NotLogin.feature" />
@@ -129,35 +122,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user I should be able to see all the products I checked out in Checkout: Overview page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who was done checking out, I should be able to go back to the products page and make another transaction" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/CheckOut.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user I should be able to see all the products I checked out in Checkout\: Overview page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user I should be able to see all the products I checked out in Checkout\: Overview page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user I should be able to see all the products I checked out in Checkout: Overview page" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: As a user who filled out all the required fields, I should be able to proceed to Checkout: Overview page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/CheckOut.feature" />
-      <option name="GLUE" value="StepDef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user who filled out all the required fields\, I should be able to proceed to Checkout\: Overview page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who filled out all the required fields\, I should be able to proceed to Checkout\: Overview page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user who filled out all the required fields, I should be able to proceed to Checkout: Overview page" />
+      <option name="NAME_FILTER" value="^As a user who was done checking out\, I should be able to go back to the products page and make another transaction$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who was done checking out\, I should be able to go back to the products page and make another transaction$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who was done checking out, I should be able to go back to the products page and make another transaction" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -178,6 +151,26 @@
       <option name="NAME_FILTER" value="^As a user\, I should be able to cancel the transaction$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user\, I should be able to cancel the transaction$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: As a user, I should be able to cancel the transaction" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: As a user, I should be able to finish the transaction" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/CheckOut.feature" />
+      <option name="GLUE" value="StepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SwagLabsTesting" />
+      <option name="NAME_FILTER" value="^As a user\, I should be able to finish the transaction$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user\, I should be able to finish the transaction$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user, I should be able to finish the transaction" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -211,18 +204,18 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Feature: NotLogin" />
+      <item itemvalue="Cucumber Java.Scenario: As a user who was done checking out, I should be able to go back to the products page and make another transaction" />
       <item itemvalue="Cucumber Java.Scenario: As a user, I should be able to cancel the transaction" />
+      <item itemvalue="Cucumber Java.Scenario: As a user, I should be able to finish the transaction" />
       <item itemvalue="Cucumber Java.Scenario: As a user, I should be able to see the total of items total and tax" />
-      <item itemvalue="Cucumber Java.Scenario: As a user I should be able to see all the products I checked out in Checkout: Overview page" />
-      <item itemvalue="Cucumber Java.Scenario: As a user who filled out all the required fields, I should be able to proceed to Checkout: Overview page" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: As a user who was done checking out, I should be able to go back to the products page and make another transaction" />
+        <item itemvalue="Cucumber Java.Scenario: As a user, I should be able to finish the transaction" />
         <item itemvalue="Cucumber Java.Feature: NotLogin" />
         <item itemvalue="Cucumber Java.Scenario: As a user, I should be able to cancel the transaction" />
         <item itemvalue="Cucumber Java.Scenario: As a user, I should be able to see the total of items total and tax" />
-        <item itemvalue="Cucumber Java.Scenario: As a user I should be able to see all the products I checked out in Checkout: Overview page" />
-        <item itemvalue="Cucumber Java.Scenario: As a user who filled out all the required fields, I should be able to proceed to Checkout: Overview page" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +263,7 @@
       <workItem from="1693273467962" duration="4239000" />
       <workItem from="1693358715764" duration="12572000" />
       <workItem from="1693446809876" duration="14654000" />
-      <workItem from="1693536900546" duration="2794000" />
+      <workItem from="1693536900546" duration="5326000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -343,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692953712068</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Already done in Test Case 30 but not yet done in TC22 in add to cart page">
+      <option name="closed" value="true" />
+      <created>1693539768010</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693539768010</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +413,8 @@
     <MESSAGE value="Sort dropdown list created and running" />
     <MESSAGE value="Finish Add to Cart Page Testing" />
     <MESSAGE value="Init add to cart test case creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init add to cart test case creation" />
+    <MESSAGE value="Already done in Test Case 30 but not yet done in TC22 in add to cart page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Already done in Test Case 30 but not yet done in TC22 in add to cart page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

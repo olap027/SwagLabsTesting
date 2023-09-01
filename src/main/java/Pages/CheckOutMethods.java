@@ -78,7 +78,7 @@ public class CheckOutMethods {
         formattedPrice.forEach(s -> System.out.println(s));
     }
 
-    public static void listCheckOutProducts (){
+    public static void listCheckOutProducts() {
         List<WebElement> productList = driver.findElements(By.cssSelector(INVENTORY_ITEM_NAME));
         List<String> listedProducts = productList.stream().map(n -> n.getText()).collect(Collectors.toList());
         listedProducts.stream().forEach(s -> System.out.println(s));
@@ -91,21 +91,30 @@ public class CheckOutMethods {
 
     }
 
-    public static void subTotalAmount (){
+    public static void subTotalAmount() {
         String itemTotal = driver.findElement(By.xpath(ITEM_TOTAL)).getText();
         System.out.println(itemTotal);
     }
 
-    public static void tax (){
+    public static void tax() {
         String tax = driver.findElement(By.xpath(TAX)).getText();
         System.out.println(tax);
     }
 
-    public static void clickCancel (){
+    public static void clickCancel() {
         WebElement click_cancel = driver.findElement(By.xpath(CANCEL_BTN));
         click_cancel.click();
     }
 
+    public static void clickFinish() {
+        WebElement clickFinish = driver.findElement(By.xpath(FINISH_BTN));
+        clickFinish.click();
+    }
+
+    public static void clickBackHome() {
+        WebElement clickBackToHomeBtn = driver.findElement(By.xpath(BACK_TO_HOME));
+        clickBackToHomeBtn.click();
+    }
 
 
 }
