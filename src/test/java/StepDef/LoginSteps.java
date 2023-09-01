@@ -1,6 +1,7 @@
 package StepDef;
 
 import Pages.AddToCart;
+import Pages.CheckOutMethods;
 import Pages.LoginMethods;
 import Pages.ProductsPage;
 import io.cucumber.java.AfterAll;
@@ -27,6 +28,7 @@ public class LoginSteps {
         swagLoginMethods = new LoginMethods(driver);
         new ProductsPage(driver);
         new AddToCart(driver);
+        new CheckOutMethods(driver);
     }
 
     @AfterAll

@@ -42,7 +42,7 @@ public class AddToCart {
                 addToCartItem.add(driver.findElements(By.cssSelector(INVENTORY_ITEM_NAME)).get(i).getText());
             }
         }
-        addToCartItem.forEach(s -> System.out.println(s));
+        addToCartItem.forEach(s -> System.out.println("Remaining remove item : " + s));
         return addToCartItem;
     }
 
@@ -84,17 +84,37 @@ public class AddToCart {
         List<String> removeItems = new ArrayList<>();
 
         for (int i = 0; i < productList.size(); i++) {
-            if(newProd.get(i).contains("Remove")){
+            if (newProd.get(i).contains("Remove")) {
                 addToCartItem.add(i);
             }
         }
 
-        int random = ThreadLocalRandom.current().nextInt(0, addToCartItem.size());
+        int random = ThreadLocalRandom.current().nextInt(1, addToCartItem.size());
         for (int i = 0; i < random; i++) {
             productList.get(addToCartItem.get(i)).click();
             removeItems.add(driver.findElements(By.cssSelector(INVENTORY_ITEM_NAME)).get(addToCartItem.get(i)).getText());
         }
-        removeItems.forEach(s -> System.out.println(s));
+        removeItems.forEach(s -> System.out.println("The item remove in home: " + s));
     }
+
+    public static void clickContinueShopBtn() {
+        WebElement continueShopBtn = driver.findElement(By.xpath(CONTINUE_SHOPPING_BTN));
+        continueShopBtn.click();
     }
+
+    public static void clickCheckOutBtn() {
+        WebElement checkOutBtn = driver.findElement(By.xpath(CHECK_OUT_BTN));
+        checkOutBtn.click();
+    }
+
+    public static void pageInformation() {
+    String currentUrl = driver.getCurrentUrl();
+        System.out.println("The Current Page navigate: " + currentUrl);
+    }
+
+
+
+
+
+}
 

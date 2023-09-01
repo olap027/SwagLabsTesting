@@ -4,5 +4,4 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= "src/main/resources/" , glue={"StepDef"})
 public class testRunners {
-
 }

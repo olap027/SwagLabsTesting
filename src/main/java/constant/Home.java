@@ -19,7 +19,25 @@ public interface Home {
     String REMOVE_BTN = ".btn_secondary";
     String BUTTON = ".btn_inventory";
 
-    String CART_ITEM="//*[@id=\"item_0_title_link\"]";
+    String CART_ITEM = "//*[@id=\"item_0_title_link\"]";
+    String CONTINUE_SHOPPING_BTN = "//button[@id='continue-shopping']";
+    String CHECK_OUT_BTN = "//button[@id='checkout']";
 
+    String FIRST_NAME_INPUT = "//input[@id='first-name']";
+    String LAST_NAME_INPUT = "//input[@id='last-name']";
+    String ZIP_CODE_INPUT = "//input[@id='postal-code']";
 
+    String CONTINUE_BTN = "//input[@id='continue']";
+    String CHECK_OUT_ERROR = "//div[@class='error-message-container error']";
+
+    String TOTAL_PRICE = "//*[@id=\"checkout_summary_container\"]/div/div[2]/div[8]";
+    String TAX = "//div[@class='summary_tax_label']";
+    String ITEM_TOTAL = "//div[@class='summary_subtotal_label']";
+
+    String FINISH_BTN = "//button[@id='finish']";
+    String CANCEL_BTN = "//button[@id='cancel']";
+
+    String BACK_TO_HOME = "//button[@id='back-to-products']";
+
+    String COMPLETE_HEADER = "//span[contains(text(),'Checkout: Complete!')]";
 }
