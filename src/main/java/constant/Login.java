@@ -10,7 +10,7 @@ public interface Login {
 
     String TABLE_CONTAINER = "//*[@id=\"inventory_container\"]";
 
-    String BURGER_ICON = "//button[@id='react-burger-menu-btn']";
+    String BURGER_ICON = "#react-burger-menu-btn";
 
     String LOG_OUT_BTN = "//a[@id='logout_sidebar_link']";
 

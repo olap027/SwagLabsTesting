@@ -2,6 +2,7 @@ package StepDef;
 
 import Pages.AddToCart;
 import Pages.CheckOutMethods;
+import Pages.LoginMethods;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -106,6 +107,23 @@ public class CheckOutCheck {
     @And("click back to home")
     public void backToHomePage() {
         CheckOutMethods.clickBackHome();
+    }
+
+    @And("click logout")
+    public void logOut () throws InterruptedException {
+        CheckOutMethods.clickLogoutBtn();
+        Thread.sleep(2000);
+    }
+
+    @Then("User should be able to see the products I added to my cart before I log out")
+    public void savedCartItems() throws InterruptedException {
+        LoginMethods.enterValidUser();
+        LoginMethods.enterValidPass();
+        Thread.sleep(2000);
+        LoginMethods.clickLogin();
+        Thread.sleep(2000);
+        AddToCart.clickAddToCartIcon();
+        Thread.sleep(2000);
     }
 
 

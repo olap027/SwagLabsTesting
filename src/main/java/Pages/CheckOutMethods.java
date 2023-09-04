@@ -9,6 +9,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static constant.Home.*;
+import static constant.Login.BURGER_ICON;
+import static constant.Login.LOG_OUT_BTN;
 
 public class CheckOutMethods {
 
@@ -114,6 +116,15 @@ public class CheckOutMethods {
     public static void clickBackHome() {
         WebElement clickBackToHomeBtn = driver.findElement(By.xpath(BACK_TO_HOME));
         clickBackToHomeBtn.click();
+    }
+
+    public static void clickLogoutBtn () throws InterruptedException {
+        WebElement iconBurger = driver.findElement(By.cssSelector(BURGER_ICON));
+        iconBurger.click();
+        Thread.sleep(2000);
+
+        WebElement logout = driver.findElement(By.xpath(LOG_OUT_BTN));
+        logout.click();
     }
 
 

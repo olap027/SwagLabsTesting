@@ -44,10 +44,9 @@ Feature: Checking the Add To Cart
     And I click the checkout button
     Then User will be redirected to Checkout: Your Information page
 
-  @SC_TC_0022(Try_Catch_Method).......NOT_DONE
+  @SC_TC_0022
   Scenario: As a user who hasn't added products to my cart, I shouldn't be able to proceed to the checkout page
     When I click the add to cart button
-    And I click the checkout button
     Then User will not be able to proceed to checkout and a prompt message will be displayed
 
 

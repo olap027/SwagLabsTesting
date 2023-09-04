@@ -78,6 +78,14 @@ Feature: Checkout: Your Information" page
     And click back to home
     Then User will be redirected to page "https://www.saucedemo.com/inventory.html"
 
+  @SC_TC_033
+  Scenario: As a user who did not finish checking out the products in my cart, data should be saved, and I will be able to see it when I log in again
+    Given Select multiple random item on product page
+    When I click the add to cart button
+    And click logout
+    Then User should be able to see the products I added to my cart before I log out
+
+
 
 
 

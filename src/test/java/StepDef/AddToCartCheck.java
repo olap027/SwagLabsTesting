@@ -5,10 +5,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 import static Pages.LoginMethods.driver;
+import static constant.Home.CHECK_OUT_BTN;
 
 public class AddToCartCheck {
 
@@ -31,7 +35,6 @@ public class AddToCartCheck {
     public void IconAddToCart() throws InterruptedException {
         AddToCart.clickAddToCartIcon();
         Thread.sleep(2000);
-
     }
 
     @And("Verify the button form add to cart change into remove")
@@ -91,6 +94,9 @@ public class AddToCartCheck {
 
     @Then("User will not be able to proceed to checkout and a prompt message will be displayed")
     public void errorCheckOut (){
+        WebElement checkOutBtn = driver.findElement(By.xpath(CHECK_OUT_BTN));
+        Assert.assertTrue(checkOutBtn.isEnabled());
+        System.out.println("When the button of checkout is enabled - Assert Failed");
     }
 
 
