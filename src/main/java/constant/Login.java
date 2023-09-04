@@ -6,5 +6,5 @@ public interface Login {
     String PASSWORD_FIELD = "//input[@id='password']";
     String LOGIN_BTN = "//input[@id='login-button']";
 
-    String UNREGISTERED_ERROR_MESSAGE = "//*[@id=\"login_button_container\"]/div/form/div[3]/h3";
+    String ERROR_MESSAGE = "//*[@id=\"login_button_container\"]/div/form/div[3]/h3";
 }

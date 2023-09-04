@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Init update driver">
+    <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Init added scenarios and fixed code format">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constant/AddToCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/DriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/DriverConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/constant/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constant/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/LoginMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunners.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,6 +37,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2Tk5JpnQyAUb15hKew1pb8y8xnp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,15 +57,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;angel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/admin/IdeaProjects/SwagLabsTesting/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -61,16 +75,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Login registered user">
-    <configuration name="Scenario: Login locked out user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page">
+    <configuration name="Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/AddToCart.feature" />
+      <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login locked out user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login locked out user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login locked out user" />
+      <option name="NAME_FILTER" value="^As a user who add products to my cart\, I should be able to see it in Your Cart page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who add products to my cart\, I should be able to see it in Your Cart page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -82,15 +96,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login registered user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/ProductSorting.feature" />
+      <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login registered user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login registered user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login registered user" />
+      <option name="NAME_FILTER" value="^As a user who selected the \&quot;Name \(Z to A\)\&quot; filter\, I will be able to see the table sorted from Z to A$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who selected the \&quot;Name \(Z to A\)\&quot; filter\, I will be able to see the table sorted from Z to A$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -102,15 +116,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login unregistered user username" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who selected the &quot;Price(high to low)&quot; filter, I will be able to see the table sorted from highest to lowest price" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/ProductSorting.feature" />
+      <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login unregistered user username$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login unregistered user username$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login unregistered user username" />
+      <option name="NAME_FILTER" value="^As a user who selected the \&quot;Price\(high to low\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who selected the \&quot;Price\(high to low\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who selected the &quot;Price(high to low)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -122,15 +136,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login unregistered user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who selected the &quot;Price(low to high)&quot; filter, I will be able to see the table sorted from highest to lowest price" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/ProductSorting.feature" />
+      <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login unregistered user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login unregistered user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login unregistered user" />
+      <option name="NAME_FILTER" value="^As a user who selected the \&quot;Price\(low to high\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who selected the \&quot;Price\(low to high\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who selected the &quot;Price(low to high)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,15 +156,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login with without username" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
-      <option name="GLUE" value="Login" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/RemoveProducts.feature" />
+      <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^Login with without username$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with without username$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login with without username" />
+      <option name="NAME_FILTER" value="^As a user who wants to remove products in my cart\, I should be able to remove them from the Your Cart page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who wants to remove products in my cart\, I should be able to remove them from the Your Cart page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -164,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Login registered user" />
-        <item itemvalue="Cucumber Java.Scenario: Login unregistered user" />
-        <item itemvalue="Cucumber Java.Scenario: Login with without username" />
-        <item itemvalue="Cucumber Java.Scenario: Login locked out user" />
-        <item itemvalue="Cucumber Java.Scenario: Login unregistered user username" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who selected the &quot;Price(high to low)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who selected the &quot;Price(low to high)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +198,28 @@
       <workItem from="1691575299655" duration="2302000" />
       <workItem from="1691646898936" duration="1917000" />
       <workItem from="1691649479475" duration="13826000" />
-      <workItem from="1691719684063" duration="18624000" />
+      <workItem from="1691719684063" duration="19963000" />
+      <workItem from="1691750433193" duration="195000" />
+      <workItem from="1691750637723" duration="211000" />
+      <workItem from="1691750856994" duration="660000" />
+      <workItem from="1691980064196" duration="10387000" />
+      <workItem from="1692008605186" duration="4063000" />
+      <workItem from="1692012685790" duration="1456000" />
+      <workItem from="1692080584570" duration="13378000" />
+      <workItem from="1692152504636" duration="15791000" />
+      <workItem from="1692237932117" duration="13747000" />
+      <workItem from="1692339217056" duration="3779000" />
+      <workItem from="1692343832539" duration="9155000" />
+      <workItem from="1692671408746" duration="22061000" />
+      <workItem from="1692768461296" duration="16539000" />
+      <workItem from="1692844619580" duration="13781000" />
+      <workItem from="1692868256397" duration="5257000" />
+      <workItem from="1692943605504" duration="1234000" />
+      <workItem from="1693274032554" duration="1886000" />
+      <workItem from="1693384163207" duration="1928000" />
+      <workItem from="1693466195471" duration="5726000" />
+      <workItem from="1693561895849" duration="3795000" />
+      <workItem from="1693805864198" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -234,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691661656502</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Init added scenarios and fixed code format">
+      <option name="closed" value="true" />
+      <created>1691749000203</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691749000204</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +310,8 @@
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Init changed driver" />
     <MESSAGE value="Init update driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init update driver" />
+    <MESSAGE value="Init added scenarios and fixed code format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init added scenarios and fixed code format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -277,7 +321,34 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Page/AddToCart.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepDef/AddToCart.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Page/RemoveProducts.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SwagLabsTesting$Scenario__As_a_user_who_selected_the__Name__Z_to_A___filter__I_will_be_able_to_see_the_table_sorted_from_Z_to_A.ic" NAME="Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A Coverage Results" MODIFIED="1692261953983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SwagLabsTesting$Scenario__As_a_user_who_add_products_to_my_cart__I_should_be_able_to_see_it_in_Your_Cart_page.ic" NAME="Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page Coverage Results" MODIFIED="1693471780195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

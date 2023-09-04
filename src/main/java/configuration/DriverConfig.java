@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class DriverConfig {
-    private final static String swagLabs = "https://www.saucedemo.com/";
+    private final static String swagLab = "https://www.saucedemo.com/";
     private final static Integer WAITING_TIME = 40;
     private static WebDriver driverChrome;
 
@@ -19,7 +19,7 @@ public class DriverConfig {
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--start-maximized");
         driverChrome = new ChromeDriver(options);
-        driverChrome.get(swagLabs);
+        driverChrome.get(swagLab);
         return driverChrome;
 
     }

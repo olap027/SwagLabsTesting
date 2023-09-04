@@ -17,14 +17,14 @@ Feature: Login
   Scenario: Login unregistered user
     When An unregistered user entered username and password
     * Clicked Login
-    Then An error message for an unregistered account will be displayed "Epic sadface: Username and password do not match any user in this service"
+    Then An error message should be displayed - "Epic sadface: Username and password do not match any user in this service"
 
 
   @SL_TC_003 @NegativeScenario
   Scenario Outline: Login locked out user
     When A locked-out user entered '<username>' and '<password>'
     * Clicked Login
-    Then An error message for locked-out users will be displayed "Epic sadface: Sorry, this user has been locked out."
+    Then An error message should be displayed - "Epic sadface: Sorry, this user has been locked out."
 
     Examples:
       | username        | password     |
@@ -32,12 +32,25 @@ Feature: Login
 
   @SL_TC_004 @NegativeScenario
   Scenario Outline: Login with without username
-    When The user entered a '<password>'
+    When The user entered a password '<password>'
     * Clicked Login
-    Then An error message for an unfilled username will be displayed "Epic sadface: Username is required"
+    Then An error message should be displayed - "Epic sadface: Username is required"
 
     Examples:
       | password     |
       | secret_sauce |
 
+  @SL_TC_005 @NegativeScenario
+  Scenario Outline:Login without password
+    When The user entered a username '<username>'
+    * Clicked Login
+    Then An error message should be displayed - "Epic sadface: Password is required"
 
+    Examples:
+      | username      |
+      | standard_user |
+
+  @SL_TC_006
+  Scenario: Login without username and password
+    When Login is Clicked
+    Then An error message should be displayed - "Epic sadface: Username is required"
