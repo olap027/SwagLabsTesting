@@ -48,7 +48,3 @@ Feature: Checking the Add To Cart
   Scenario: As a user who hasn't added products to my cart, I shouldn't be able to proceed to the checkout page
     When I click the add to cart button
     Then User will not be able to proceed to checkout and a prompt message will be displayed
-
-
-
-

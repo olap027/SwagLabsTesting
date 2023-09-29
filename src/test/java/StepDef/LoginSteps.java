@@ -55,6 +55,7 @@ public class LoginSteps {
         String currentURL = driver.getCurrentUrl();
         Assert.assertEquals(currentURL, expectedURL);
         System.out.println("Expected Url: " + expectedURL);
+
     }
 
     // TC-002

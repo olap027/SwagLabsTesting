@@ -34,4 +34,3 @@ Feature: Login
   Scenario: Login with unfilled required fields
     * Click Login
     Then The user is unable to log in and show an error message "Epic sadface: Username is required"
-
