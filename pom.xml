@@ -22,6 +22,7 @@
         <hamcrest.version>2.2</hamcrest.version>
         <junit5.version>5.9.3</junit5.version>
         <cucumber.version>7.13.0</cucumber.version>
+        <cucumber.options>--logging-level=DEBUG</cucumber.options>
     </properties>
 
 
