@@ -7,6 +7,7 @@ import Pages.ProductsPage;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -16,6 +17,7 @@ import org.openqa.selenium.WebElement;
 
 import static configuration.DriverConfig.getChromeConfig;
 import static constant.Login.ERROR_MESSAGE;
+
 
 public class LoginSteps {
 
@@ -41,6 +43,11 @@ public class LoginSteps {
         LoginMethods.clickLogin();
     }
 
+    @Given("I clear the username and password field")
+    public void clear_field() throws InterruptedException {
+        LoginMethods.clearField();
+        Thread.sleep(2000);
+    }
 
     // TC-001
     @When("Enter credentials")
@@ -50,12 +57,12 @@ public class LoginSteps {
     }
 
     @Then("User will navigate to products page {string}")
-    public void User_will_navigate_to_products_page(String expectedURL) {
+    public void User_will_navigate_to_products_page(String expectedURL) throws InterruptedException {
         LoginMethods.productsPage();
         String currentURL = driver.getCurrentUrl();
         Assert.assertEquals(currentURL, expectedURL);
         System.out.println("Expected Url: " + expectedURL);
-
+        LoginMethods.clickLogout();
     }
 
     // TC-002
@@ -86,12 +93,12 @@ public class LoginSteps {
 
 
     @Then("The user is unable to log in and show an error message {string}")
-    public void unableToLogin(String expectedError) {
+    public void unableToLogin(String expectedError) throws InterruptedException {
         WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
-        String actualLockedError = error_message.getText();
-        Assert.assertEquals(actualLockedError, expectedError);
-        System.out.println("Actual Error: " + actualLockedError);
+        String actualError = error_message.getText();
+        Assert.assertEquals(expectedError, actualError);
+        System.out.println("Actual Error: " + actualError);
         System.out.println("Expected Error: " + expectedError);
+        Thread.sleep(2000);
     }
-
 }

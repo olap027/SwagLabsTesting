@@ -119,7 +119,7 @@ public class CheckOutMethods {
     }
 
     public static void clickLogoutBtn () throws InterruptedException {
-        WebElement iconBurger = driver.findElement(By.cssSelector(BURGER_ICON));
+        WebElement iconBurger = driver.findElement(By.xpath(BURGER_ICON));
         iconBurger.click();
         Thread.sleep(2000);
 

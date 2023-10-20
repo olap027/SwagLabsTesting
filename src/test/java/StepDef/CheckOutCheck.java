@@ -18,6 +18,9 @@ public class CheckOutCheck {
 
     @Given("Ready to checkout all orders in the cart")
     public void checkOutAllItemsInCart() throws InterruptedException {
+//        LoginMethods.enterValidUser();
+//        LoginMethods.enterValidPass();
+//        LoginMethods.clickLogin();
         AddToCart.clickRandomMultipleProducts();
         AddToCart.clickAddToCartIcon();
         Thread.sleep(2000);

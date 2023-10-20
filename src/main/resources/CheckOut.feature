@@ -1,8 +1,9 @@
+@checkOut
 Feature: Checkout: Your Information" page
 
-  Background: User Login
-    Given The user is logged in
-    * Click Login
+#  Background: User Login
+#    Given The user is logged in
+#    * Click Login
 
   @SC_TC_023
   Scenario: As a user who did not fill in the first name field, I should not be able to proceed to Checkout: Overview page

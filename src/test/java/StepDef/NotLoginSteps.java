@@ -18,7 +18,7 @@ public class NotLoginSteps {
     }
 
     @Then("Show error message for accessing the site without login {string}")
-    public void accessingThePage(String expectedError){
+    public void accessingThePage(String expectedError) throws InterruptedException {
         WebElement error_message = driver.findElement(By.xpath(ERROR_MESSAGE));
         String actualLockedError = error_message.getText();
         Assert.assertEquals(actualLockedError, expectedError);

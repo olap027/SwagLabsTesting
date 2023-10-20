@@ -17,7 +17,7 @@ public class LoginMethods {
     public static WebDriverWait webDriverWait;
 
     public LoginMethods(WebDriver driver) {
-       LoginMethods.driver = driver;
+        LoginMethods.driver = driver;
     }
 
     public static void enterValidUser() {
@@ -57,11 +57,32 @@ public class LoginMethods {
         System.out.println("The Actual Error Message: " + actualError);
     }
 
-    public static void ErrorMessageLockUser(){
+    public static void ErrorMessageLockUser() {
         webDriverWait = getDriverWait(driver);
         WebElement error_message = getElementWithPolling(webDriverWait, By.xpath(ERROR_MESSAGE));
         String actualError = error_message.getText();
     }
 
+    public static void clickLogout() throws InterruptedException {
+        WebElement clickBurgerIcon = driver.findElement(By.xpath(BURGER_ICON));
+        clickBurgerIcon.click();
+        Thread.sleep(2000);
+
+        WebElement clickLogout = driver.findElement(By.xpath(LOG_OUT_BTN));
+        clickLogout.click();
+    }
+
+    public static void clearField() throws InterruptedException {
+        WebElement clickErrorButton = driver.findElement(By.cssSelector(ERROR_EXIT_BUTTON));
+        clickErrorButton.click();
+        Thread.sleep(2000);
+
+        WebElement fieldUsername = driver.findElement(By.xpath(USERNAME_FIELD));
+        fieldUsername.clear();
+
+        WebElement fieldPassword = driver.findElement(By.xpath(PASSWORD_FIELD));
+        fieldPassword.clear();
+        Thread.sleep(2000);
+    }
 
 }
