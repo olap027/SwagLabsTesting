@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdfdb648-886c-48e8-a5a2-1e199fe32659" name="Changes" comment="Init added scenarios and fixed code format">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constant/AddToCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/SwagLabUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constant/YourCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constant/YourInformationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/YourCartPageButtons.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/YourInformationPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDef/YourCartPageButtons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDef/YourInformationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/DriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/DriverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constant/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constant/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/SwagLabLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Page/LoginMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constant/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constant/AddToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AppUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -75,16 +77,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page">
-    <configuration name="Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login registered user">
+    <configuration name="Scenario: As a user who did not fill in the first name field, I should not be able to proceed to Checkout: Overview page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/AddToCart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/YourInformationPage.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user who add products to my cart\, I should be able to see it in Your Cart page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who add products to my cart\, I should be able to see it in Your Cart page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page" />
+      <option name="NAME_FILTER" value="^As a user who did not fill in the first name field\, I should not be able to proceed to Checkout\: Overview page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who did not fill in the first name field\, I should not be able to proceed to Checkout\: Overview page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who did not fill in the first name field, I should not be able to proceed to Checkout: Overview page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -96,15 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who did not fill in the last name field, I should not be able to proceed to Checkout: Overview page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/ProductSorting.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/YourInformationPage.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user who selected the \&quot;Name \(Z to A\)\&quot; filter\, I will be able to see the table sorted from Z to A$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who selected the \&quot;Name \(Z to A\)\&quot; filter\, I will be able to see the table sorted from Z to A$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A" />
+      <option name="NAME_FILTER" value="^As a user who did not fill in the last name field\, I should not be able to proceed to Checkout\: Overview page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who did not fill in the last name field\, I should not be able to proceed to Checkout\: Overview page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who did not fill in the last name field, I should not be able to proceed to Checkout: Overview page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -116,15 +118,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user who selected the &quot;Price(high to low)&quot; filter, I will be able to see the table sorted from highest to lowest price" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a user who did not fill in the zip code field, I should not be able to proceed to Checkout: Overview page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/ProductSorting.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/YourInformationPage.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user who selected the \&quot;Price\(high to low\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who selected the \&quot;Price\(high to low\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user who selected the &quot;Price(high to low)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
+      <option name="NAME_FILTER" value="^As a user who did not fill in the zip code field\, I should not be able to proceed to Checkout\: Overview page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who did not fill in the zip code field\, I should not be able to proceed to Checkout\: Overview page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user who did not fill in the zip code field, I should not be able to proceed to Checkout: Overview page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -136,15 +138,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user who selected the &quot;Price(low to high)&quot; filter, I will be able to see the table sorted from highest to lowest price" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login registered user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/ProductSorting.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/SwagLogin.feature" />
       <option name="GLUE" value="StepDef" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user who selected the \&quot;Price\(low to high\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who selected the \&quot;Price\(low to high\)\&quot; filter\, I will be able to see the table sorted from highest to lowest price$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user who selected the &quot;Price(low to high)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
+      <option name="NAME_FILTER" value="^Login registered user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login registered user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login registered user" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -156,33 +158,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/RemoveProducts.feature" />
-      <option name="GLUE" value="StepDef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="testRunners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SwagLabsTesting" />
-      <option name="NAME_FILTER" value="^As a user who wants to remove products in my cart\, I should be able to remove them from the Your Cart page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user who wants to remove products in my cart\, I should be able to remove them from the Your Cart page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testRunners" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: As a user who wants to remove products in my cart, I should be able to remove them from the Your Cart page" />
-        <item itemvalue="Cucumber Java.Scenario: As a user who add products to my cart, I should be able to see it in Your Cart page" />
-        <item itemvalue="Cucumber Java.Scenario: As a user who selected the &quot;Price(high to low)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
-        <item itemvalue="Cucumber Java.Scenario: As a user who selected the &quot;Price(low to high)&quot; filter, I will be able to see the table sorted from highest to lowest price" />
-        <item itemvalue="Cucumber Java.Scenario: As a user who selected the &quot;Name (Z to A)&quot; filter, I will be able to see the table sorted from Z to A" />
+        <item itemvalue="Cucumber Java.Scenario: Login registered user" />
+        <item itemvalue="JUnit.testRunners" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who did not fill in the zip code field, I should not be able to proceed to Checkout: Overview page" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who did not fill in the last name field, I should not be able to proceed to Checkout: Overview page" />
+        <item itemvalue="Cucumber Java.Scenario: As a user who did not fill in the first name field, I should not be able to proceed to Checkout: Overview page" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +210,14 @@
       <workItem from="1693384163207" duration="1928000" />
       <workItem from="1693466195471" duration="5726000" />
       <workItem from="1693561895849" duration="3795000" />
-      <workItem from="1693805864198" duration="598000" />
+      <workItem from="1693805864198" duration="9825000" />
+      <workItem from="1693879502923" duration="2098000" />
+      <workItem from="1694413563542" duration="99000" />
+      <workItem from="1694413677912" duration="5851000" />
+      <workItem from="1694484055062" duration="597000" />
+      <workItem from="1695869233358" duration="233000" />
+      <workItem from="1695869559564" duration="234000" />
+      <workItem from="1698202254291" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -277,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691749000204</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Init added scenarios and fixed code format">
+      <option name="closed" value="true" />
+      <created>1693806517945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693806517945</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,12 +334,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDef/AddToCart.java</url>
-          <line>25</line>
+          <line>24</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Page/RemoveProducts.java</url>
-          <line>35</line>
+          <line>34</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>

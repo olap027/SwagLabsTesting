@@ -4,6 +4,7 @@ import Page.AddToCart;
 import Page.LoginMethods;
 import Page.ProductListing;
 import Page.RemoveProducts;
+import Util.SwagLabUtil;
 import configuration.DriverConfig;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
@@ -31,6 +32,7 @@ public class Login {
         new ProductListing(driver);
         new AddToCart(driver);
         new RemoveProducts(driver);
+        new SwagLabUtil(driver);
     }
 
     @AfterAll
@@ -52,9 +54,11 @@ public class Login {
 
     //When
     @When("A registered user entered a valid {string} and {string}")
-    public void loginRegisteredAccount(String username, String password) {
+    public void loginRegisteredAccount(String username, String password) throws InterruptedException {
         swagLabLogin.inputRegisteredUsername(username);
+        Thread.sleep(3000);
         swagLabLogin.validPassword(password);
+        Thread.sleep(3000);
     }
 
     @When("An unregistered user entered username and password")
@@ -82,6 +86,7 @@ public class Login {
     //Then
     @Then("The user will navigate to the products page {string}")
     public void verifyProductsPageURL(String expectedURL) throws InterruptedException {
+        Thread.sleep(3000);
         String actualURL = driver.getCurrentUrl();
         Assert.assertEquals(actualURL, expectedURL);
     }
